@@ -21,15 +21,15 @@ async function fetchApiKey() {
           document.querySelector(".wind").innerHTML = data.wind.speed + " km/h"; 
 
           if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "public/images/clouds.png";
+            weatherIcon.src = "images/clouds.png";
           } else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "public/images/clear.png";
+            weatherIcon.src = "images/clear.png";
           } else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "public/images/rain.png";
+            weatherIcon.src = "images/rain.png";
           } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "public/images/drizzle.png";
+            weatherIcon.src = "images/drizzle.png";
           } else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "public/images/mist.png";
+            weatherIcon.src = "images/mist.png";
           }
 
           document.querySelector(".weather").style.display = "block";
