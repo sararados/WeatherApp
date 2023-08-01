@@ -1,8 +1,7 @@
 'use strict';
+import apiKey from './config.js';
 
-//import apiKey from './config.js';
-
-const apiKey=process.env.MY_API_KEY;
+//const apiKey=process.env.MY_API_KEY;
 const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search input");
