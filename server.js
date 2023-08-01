@@ -6,12 +6,12 @@ const apiKey = process.env.MY_API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 // Endpoint to send API key to frontend
-app.get('/api-key', (_req, res) => {
+app.get('/WeatherApp/api-key', (_req, res) => {
   res.send(apiKey);
 });
 
 // Weather data endpoint
-app.get('/weather', async (req, res) => {
+app.get('/WeatherApp/weather', async (req, res) => {
   const city = req.query.city;
   try {
     // Dynamisk import() av node-fetch
